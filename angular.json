@@ -32,7 +32,6 @@
             "production": {
               "outputPath": "docs",
               "deployUrl": "/DangularTransport/",
-              "baseHref":  "/DangularTransport",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
