@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="Added github pages publish dir (docs)&#10;Added data service env urls">
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/main-es2015.e4d60f959f5baa421e25.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/polyfills-es5.72845f0db871433d1fef.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/runtime-es5.f721961e0bde688accd1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
     </list>
@@ -148,7 +151,7 @@
       <updated>1565015808308</updated>
       <workItem from="1565015811165" duration="5939000" />
       <workItem from="1565030825835" duration="5132000" />
-      <workItem from="1565086957409" duration="9969000" />
+      <workItem from="1565086957409" duration="10487000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -164,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565103908742</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added github pages publish dir (docs)&#10;Added data service env urls">
+      <created>1565104890547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565104890547</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
