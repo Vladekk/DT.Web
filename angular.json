@@ -30,6 +30,9 @@
           },
           "configurations": {
             "production": {
+              "outputPath": "docs",
+              "deployUrl": "/DangularTransport/",
+              "baseHref":  "/DangularTransport",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -68,6 +71,7 @@
           "configurations": {
             "production": {
               "browserTarget": "DT-UI:build:production"
+
             }
           }
         },

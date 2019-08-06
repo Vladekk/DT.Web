@@ -1,11 +1,13 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {environment} from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConfigService {
 
-  constructor() { }
-  // scheduleServiceUrl = 'https://dangulartransport.izvne.workers.dev/';
-  ScheduleServiceUrl = 'http://localhost:3000';
+  constructor() {
+  }
+
+  ScheduleServiceUrl = environment.ScheduleServiceUrl;
 }

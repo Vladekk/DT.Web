@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  ScheduleServiceUrl : 'https://dangulartransport.izvne.workers.dev/'
 };
