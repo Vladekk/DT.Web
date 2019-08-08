@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  ScheduleServiceUrl : 'http://localhost:3000'
+  ScheduleServiceUrl: 'http://localhost:3000',
+  SchedulePageUrl: 'http://satiksme.daugavpils.lv/autobuss-nr-17a-autoosta-csdd-jaunforstadte'
 };
 
 /*
