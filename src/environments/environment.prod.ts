@@ -1,5 +1,4 @@
 export const environment = {
   production: true,
-  ScheduleServiceUrl : 'https://dangulartransport.izvne.workers.dev/'
-
+  ScheduleServiceUrl: 'https://upside.down.pictures/api'
 };
