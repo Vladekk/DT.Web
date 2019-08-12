@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-   ScheduleServiceUrl: 'http://localhost:3000/api/GetClosestRuns',
+  ScheduleServiceUrl: 'http://localhost:3000/api/',
   // ScheduleServiceUrl: 'https://upside.down.pictures/api/GetClosestRuns',
   // SchedulePageUrl: 'http://satiksme.daugavpils.lv/autobuss-nr-17a-autoosta-csdd-jaunforstadte',
   AllSchedulesUrl: 'http://www.satiksme.daugavpils.lv/autobusu-kustibu-saraksts'

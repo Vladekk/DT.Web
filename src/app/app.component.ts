@@ -27,6 +27,14 @@ export class AppComponent implements OnInit {
         error => {
           this.error = error;
         });
+
+    this.scheduleService.GetAllRoutes()
+      .subscribe((arr: Array<string[]>) => {
+          const b = arr;
+        },
+        error => {
+          this.error = error;
+        });
   }
 
 }
