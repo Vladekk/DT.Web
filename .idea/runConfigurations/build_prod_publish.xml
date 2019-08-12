@@ -5,7 +5,7 @@
     <scripts>
       <script value="build" />
     </scripts>
-    <arguments value="--prod --output-path docs --base-href /DangularTransport/" />
+    <arguments value="--prod --output-path=docs" />
     <node-interpreter value="project" />
     <envs />
     <method v="2" />

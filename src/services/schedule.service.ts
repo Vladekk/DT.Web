@@ -29,7 +29,8 @@ export class ScheduleService implements IGetScheduleInfo {
   };
 
   constructor(private http: HttpClient, private configService: ConfigService) {
-    this.dataSupplier = this.http.get<[string[], string[]]>(configService.ScheduleServiceUrl)
+    this.dataSupplier = this.http.post<[string[], string[]]>(configService.ScheduleServiceUrl, {BusNumber: '17A'}, {headers:
+        {'Content-Type': 'application/json' }})
       .pipe(map(this.fixDates));
   }
 

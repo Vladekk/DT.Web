@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="Release 0.1">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/build_prod_publish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/build_prod_publish.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.karma.karma_node_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -154,7 +156,9 @@
       <workItem from="1565197975195" duration="26000" />
       <workItem from="1565253438444" duration="743000" />
       <workItem from="1565255659095" duration="2939000" />
-      <workItem from="1565278324697" duration="996000" />
+      <workItem from="1565278324697" duration="2459000" />
+      <workItem from="1565602081375" duration="251000" />
+      <workItem from="1565602367836" duration="2792000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
