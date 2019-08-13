@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="Switched to POST request, version 0.1.0">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="Changed api for getting routes to use class">
+      <change afterPath="$PROJECT_DIR$/src/app/IRoute.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/IDictionary.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/config.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,14 +31,6 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="512990fe-94f0-40fe-9e8d-1446c7d369ac" />
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/runConfigurations/build_prod_publish.xml" />
-        <option value="$PROJECT_DIR$/.idea/dictionaries/vkugelevics.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectId" id="1P0fCaXTcVEMIdOGbDF4nvwZeEe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -159,7 +154,7 @@
       <workItem from="1565255659095" duration="2939000" />
       <workItem from="1565278324697" duration="2459000" />
       <workItem from="1565602081375" duration="251000" />
-      <workItem from="1565602367836" duration="7474000" />
+      <workItem from="1565602367836" duration="11085000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -251,19 +246,8 @@
     <MESSAGE value="Release 0.1" />
     <MESSAGE value="Switched to POST request" />
     <MESSAGE value="Switched to POST request, version 0.1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Switched to POST request, version 0.1.0" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/app.component.ts</url>
-          <line>32</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Changed api for getting routes to use class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed api for getting routes to use class" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DT_UI$Angular_Application.dat" NAME="Angular Application Coverage Results" MODIFIED="1565094980529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

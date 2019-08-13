@@ -11,3 +11,4 @@ export class ConfigService {
 
   ScheduleServiceUrl = environment.ScheduleServiceUrl;
 }
+

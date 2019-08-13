@@ -1,10 +1,10 @@
-/* tslint:disable:semicolon */
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {IGetScheduleInfo} from '../IGetScheduleInfo';
 import {ConfigService} from './config.service';
+import {Route} from '../app/Route';
 
 
 @Injectable({
@@ -12,7 +12,7 @@ import {ConfigService} from './config.service';
 })
 export class ScheduleService implements IGetScheduleInfo {
 
-  private readonly routeDataSupplier: Observable<Array<string[]>>;
+  private readonly routeDataSupplier: Observable<Route[]>;
 
   private takeHowMuch = 3;
   private readonly dataSupplier: Observable<[Date[], Date[]]>;
@@ -24,7 +24,7 @@ export class ScheduleService implements IGetScheduleInfo {
     })
       .pipe(map(this.fixDates));
 
-    this.routeDataSupplier = this.http.post<Array<string[]>>(configService.ScheduleServiceUrl + 'GetAllRoutes', {}, {
+    this.routeDataSupplier = this.http.post<Route[]>(configService.ScheduleServiceUrl + 'GetAllRoutes', {}, {
       headers:
         {'Content-Type': 'application/json'}
     });
@@ -48,7 +48,10 @@ export class ScheduleService implements IGetScheduleInfo {
     return this.dataSupplier;
   }
 
-  GetAllRoutes(): Observable<Array<string[]>> {
+  GetAllRoutes(): Observable<Route[]> {
     return this.routeDataSupplier;
   }
 }
+
+
+

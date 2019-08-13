@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ScheduleService} from '../services/schedule.service';
+import {IRoute} from './IRoute';
+import {Route} from './Route';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +16,9 @@ export class AppComponent implements OnInit {
     this.scheduleService = scheduleService;
   }
 
+
+  // noinspection JSMismatchedCollectionQueryUpdate
+  private Routes: IRoute[] = [];
   title = 'DangularSatiksme';
   fromCenterSchedule: Date[];
   toCenterSchedule: Date[];
@@ -29,8 +34,8 @@ export class AppComponent implements OnInit {
         });
 
     this.scheduleService.GetAllRoutes()
-      .subscribe((arr: Array<string[]>) => {
-          const b = arr;
+      .subscribe((routes: Route[]) => {
+          this.Routes = routes;
         },
         error => {
           this.error = error;
