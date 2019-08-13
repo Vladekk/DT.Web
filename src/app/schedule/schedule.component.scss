@@ -1,18 +1,34 @@
+$blockMargin:0.3em;
 ul {
   font-size: 1.1em;
   display: block;
   float: left;
   list-style-type: none;
   font-family: Calibri, Verdana, sans-serif;
+  margin-top: 0;
+}
+
+.routes li {
+  display: inline;
+}
+
+ul.routes {
+  float: none;
+  margin-bottom: $blockMargin*2;
 }
 
 li:first-child {
   font-weight: bold;
   font-size: 1.3em;
   color: #1a5600;
-  margin-bottom: 0.6em;
+  margin-bottom:$blockMargin;
 }
 
 .to li:first-child {
   color: darkred;
+}
+
+ul.routes li:first-child{
+  display: block !important;
+  margin-bottom: $blockMargin;
 }

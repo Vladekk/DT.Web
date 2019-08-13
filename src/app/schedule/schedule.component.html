@@ -1,7 +1,7 @@
 <ul class="routes">
   <li>Routes</li>
   <li *ngFor="let route of Routes">
-    {{ route.Number}}
+    <a routerLink="/Route/{{route.Number}}">{{ route.Number }} </a>
   </li>
 </ul>
 <ul class="from">
