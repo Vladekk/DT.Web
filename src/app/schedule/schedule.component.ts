@@ -16,7 +16,7 @@ export class ScheduleComponent implements OnInit {
   toCenterSchedule: Date[];
   private error: any;
   // noinspection JSMismatchedCollectionQueryUpdate
-  private Routes: IRoute[] = [];
+  public Routes: IRoute[] = [];
 
   constructor(private scheduleService: ScheduleService, private activatedRoute: ActivatedRoute) {
   }
