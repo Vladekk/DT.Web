@@ -1,5 +1,5 @@
 import {Observable} from 'rxjs';
 
 export interface IGetScheduleInfo {
-  GetScheduleInfo(): Observable<[Date[], Date[]]>;
+  GetScheduleInfo(busNumber: string): Observable<[Date[], Date[]]>;
 }

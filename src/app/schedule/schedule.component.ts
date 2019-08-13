@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ScheduleService} from '../../services/schedule.service';
 import {IRoute} from '../IRoute';
 import {Route} from '../Route';
+import {ActivatedRoute, ParamMap} from '@angular/router';
 
 
 @Component({
@@ -13,24 +14,19 @@ export class ScheduleComponent implements OnInit {
 
   fromCenterSchedule: Date[];
   toCenterSchedule: Date[];
-  private scheduleService: ScheduleService;
   private error: any;
   // noinspection JSMismatchedCollectionQueryUpdate
   private Routes: IRoute[] = [];
 
-  constructor(scheduleService: ScheduleService) {
-    this.scheduleService = scheduleService;
+  constructor(private scheduleService: ScheduleService, private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.scheduleService.GetScheduleInfo()
-      .subscribe(([fc, tc]: [Date[], Date[]]) => {
-          this.fromCenterSchedule = fc;
-          this.toCenterSchedule = tc;
-        },
-        error => {
-          this.error = error;
-        });
+    this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
+      const routeNumber = params.get('routeNumber') as string;
+      this.GetSchedule(routeNumber);
+      return routeNumber;
+    });
 
     this.scheduleService.GetAllRoutes()
       .subscribe((routes: Route[]) => {
@@ -42,4 +38,14 @@ export class ScheduleComponent implements OnInit {
   }
 
 
+  private GetSchedule(routeNumber: string) {
+    this.scheduleService.GetScheduleInfo(routeNumber)
+      .subscribe(([fc, tc]: [Date[], Date[]]) => {
+          this.fromCenterSchedule = fc;
+          this.toCenterSchedule = tc;
+        },
+        error => {
+          this.error = error;
+        });
+  }
 }

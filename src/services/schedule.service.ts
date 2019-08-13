@@ -15,14 +15,10 @@ export class ScheduleService implements IGetScheduleInfo {
   private readonly routeDataSupplier: Observable<Route[]>;
 
   private takeHowMuch = 3;
-  private readonly dataSupplier: Observable<[Date[], Date[]]>;
+
 
   constructor(private http: HttpClient, private configService: ConfigService) {
-    this.dataSupplier = this.http.post<[string[], string[]]>(configService.ScheduleServiceUrl + 'GetClosestRuns', {BusNumber: '17A'}, {
-      headers:
-        {'Content-Type': 'application/json'}
-    })
-      .pipe(map(this.fixDates));
+
 
     this.routeDataSupplier = this.http.post<Route[]>(configService.ScheduleServiceUrl + 'GetAllRoutes', {}, {
       headers:
@@ -44,8 +40,12 @@ export class ScheduleService implements IGetScheduleInfo {
   };
 
 
-  GetScheduleInfo(): Observable<[Date[], Date[]]> {
-    return this.dataSupplier;
+  GetScheduleInfo(busNumber: string): Observable<[Date[], Date[]]> {
+    return this.http.post<[string[], string[]]>(this.configService.ScheduleServiceUrl + 'GetClosestRuns', {BusNumber: busNumber}, {
+      headers:
+        {'Content-Type': 'application/json'}
+    })
+      .pipe(map(this.fixDates));
   }
 
   GetAllRoutes(): Observable<Route[]> {
