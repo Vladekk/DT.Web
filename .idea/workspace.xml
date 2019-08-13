@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="Changed api for getting routes to use class">
-      <change afterPath="$PROJECT_DIR$/src/app/IRoute.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/IDictionary.ts" afterDir="false" />
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/config.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +155,7 @@
       <workItem from="1565255659095" duration="2939000" />
       <workItem from="1565278324697" duration="2459000" />
       <workItem from="1565602081375" duration="251000" />
-      <workItem from="1565602367836" duration="11085000" />
+      <workItem from="1565602367836" duration="13000000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -219,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565607610735</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changed api for getting routes to use class">
+      <created>1565685766871</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1565685766871</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

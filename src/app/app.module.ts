@@ -1,17 +1,36 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {AppComponent} from './app.component';
+import {HttpClientModule} from '@angular/common/http';
+import {RouterModule, Routes} from '@angular/router';
+import {environment} from '../environments/environment.prod';
+import {ScheduleComponent} from './schedule/schedule.component';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+
+const appRoutes: Routes = [
+  //{path: 'crisis-center', component: CrisisListComponent},
+  {path: 'Route/:routeNumber', component: ScheduleComponent},
+  {path: '', redirectTo: 'Route/17A', pathMatch: 'full'},
+  // {path: '**', component: PageNotFoundComponent}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(
+      appRoutes,
+      {enableTracing: !environment.production} // <-- debugging purposes only
+    )
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy, useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -1,31 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <base href="/">
   <meta charset="utf-8">
   <title>{{title}}</title>
-  <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--  <link rel="icon" type="image/x-icon" href="favicon.ico">-->
 </head>
 <body>
-<ul class="routes">
-  <li>Routes</li>
-  <li *ngFor="let route of Routes">
-    {{ route.Number}}
-  </li>
-</ul>
-<ul class="from">
-  <li>From center</li>
-  <li *ngFor="let row of fromCenterSchedule">
-    {{ row | date:'shortTime' }}
-  </li>
-</ul>
-<ul class="to">
-  <li>To center</li>
-  <li *ngFor="let row of toCenterSchedule">
-    {{ row | date:'shortTime' }}
-  </li>
-</ul>
+<router-outlet></router-outlet>
 </body>
 </html>

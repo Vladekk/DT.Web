@@ -1,0 +1,18 @@
+<ul class="routes">
+  <li>Routes</li>
+  <li *ngFor="let route of Routes">
+    {{ route.Number}}
+  </li>
+</ul>
+<ul class="from">
+  <li>From center</li>
+  <li *ngFor="let row of fromCenterSchedule">
+    {{ row | date:'shortTime' }}
+  </li>
+</ul>
+<ul class="to">
+  <li>To center</li>
+  <li *ngFor="let row of toCenterSchedule">
+    {{ row | date:'shortTime' }}
+  </li>
+</ul>

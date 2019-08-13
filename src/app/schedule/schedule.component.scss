@@ -1,0 +1,18 @@
+ul {
+  font-size: 1.1em;
+  display: block;
+  float: left;
+  list-style-type: none;
+  font-family: Calibri, Verdana, sans-serif;
+}
+
+li:first-child {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #1a5600;
+  margin-bottom: 0.6em;
+}
+
+.to li:first-child {
+  color: darkred;
+}
