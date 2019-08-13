@@ -1,0 +1,14 @@
+$blockMargin:0.3em;
+ul.routes li:first-child{
+  display: block !important;
+  margin-bottom: $blockMargin;
+}
+
+.routes li {
+  display: inline;
+}
+
+ul.routes {
+  float: none;
+  margin-bottom: $blockMargin*2;
+}

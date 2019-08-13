@@ -8,14 +8,6 @@ ul {
   margin-top: 0;
 }
 
-.routes li {
-  display: inline;
-}
-
-ul.routes {
-  float: none;
-  margin-bottom: $blockMargin*2;
-}
 
 li:first-child {
   font-weight: bold;
@@ -26,9 +18,4 @@ li:first-child {
 
 .to li:first-child {
   color: darkred;
-}
-
-ul.routes li:first-child{
-  display: block !important;
-  margin-bottom: $blockMargin;
 }

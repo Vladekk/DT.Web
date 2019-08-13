@@ -6,6 +6,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {environment} from '../environments/environment.prod';
 import {ScheduleComponent} from './schedule/schedule.component';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import {RouteSelectorComponent} from './schedule/route-selector/route-selector.component';
 
 const appRoutes: Routes = [
   //{path: 'crisis-center', component: CrisisListComponent},
@@ -17,7 +18,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    RouteSelectorComponent
   ],
   imports: [
     BrowserModule,

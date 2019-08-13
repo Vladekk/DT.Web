@@ -1,9 +1,4 @@
-<ul class="routes">
-  <li>Routes</li>
-  <li *ngFor="let route of Routes">
-    <a routerLink="/Route/{{route.Number}}">{{ route.Number }} </a>
-  </li>
-</ul>
+<app-route-selector></app-route-selector>
 <ul class="from">
   <li>From center</li>
   <li *ngFor="let row of fromCenterSchedule">
