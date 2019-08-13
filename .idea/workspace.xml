@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="Logic to support route selection">
-      <change afterPath="$PROJECT_DIR$/docs/main-es2015.4de8946396603ec827b7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/main-es5.ff47ee70523a0833d5eb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/build_prod_publish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/preparePublish.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/build-for-github-publish.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build-for-github-publish.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main-es2015.679a54796f84dcf5a4fb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main-es5.677dbca94c010c4e07db.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +147,7 @@
       <workItem from="1565255659095" duration="2939000" />
       <workItem from="1565278324697" duration="2459000" />
       <workItem from="1565602081375" duration="251000" />
-      <workItem from="1565602367836" duration="19023000" />
+      <workItem from="1565602367836" duration="19277000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -259,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565697722847</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="publish">
+      <created>1565698329900</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1565698329900</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +287,8 @@
     <MESSAGE value="Added routing" />
     <MESSAGE value="Added route selector" />
     <MESSAGE value="Logic to support route selection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logic to support route selection" />
+    <MESSAGE value="publish" />
+    <option name="LAST_COMMIT_MESSAGE" value="publish" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
