@@ -1,7 +1,23 @@
-<h1>Routes</h1>
-<ul class="routes">
+<div class="row outerRow">
+  <div class="col-xs-1">
+    <label for="dropdownManual">Route</label>
+  </div>
 
-  <li *ngFor="let route of Routes">
-    <a routerLink="/Route/{{route.Number}}">{{ route.Number }} </a>
-  </li>
-</ul>
+  <div class="col-xs-1 offset-1">
+    <div #dropRoute="ngbDropdown" ngbDropdown>
+      <button (click)="dropRoute.toggle()" class="btn btn-outline-primary mr-2" id="dropdownManual"
+              ngbDropdownAnchor>{{RouteNumber}}</button>
+      <div aria-labelledby="dropdownManual" ngbDropdownMenu>
+      <span (click)="routeLink.click()" *ngFor="let route of Routes" ngbDropdownItem>
+          <a #routeLink routerLink="/Route/{{route.Number}}">{{ route.Number }} </a>
+      </span>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+

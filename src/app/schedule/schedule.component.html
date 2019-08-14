@@ -1,13 +1,19 @@
 <app-route-selector></app-route-selector>
-<ul class="from">
-  <li>From center</li>
-  <li *ngFor="let row of fromCenterSchedule">
-    {{ row | date:'shortTime' }}
-  </li>
-</ul>
-<ul class="to">
-  <li>To center</li>
-  <li *ngFor="let row of toCenterSchedule">
-    {{ row | date:'shortTime' }}
-  </li>
-</ul>
+<div class="row">
+
+  <ul class="from">
+    <li>From autoosta</li>
+    <li *ngFor="let row of fromCenterSchedule">
+      {{ row | date:'shortTime' }}
+    </li>
+  </ul>
+</div>
+<div class="row">
+  <ul class="to">
+    <li>From end station</li>
+    <li *ngFor="let row of toCenterSchedule">
+      {{ row | date:'shortTime' }}
+    </li>
+  </ul>
+</div>
+

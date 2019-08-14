@@ -7,6 +7,7 @@ import {environment} from '../environments/environment.prod';
 import {ScheduleComponent} from './schedule/schedule.component';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import {RouteSelectorComponent} from './schedule/route-selector/route-selector.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes = [
   //{path: 'crisis-center', component: CrisisListComponent},
@@ -23,7 +24,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    HttpClientModule, NgbModule,
     RouterModule.forRoot(
       appRoutes,
       {enableTracing: !environment.production} // <-- debugging purposes only

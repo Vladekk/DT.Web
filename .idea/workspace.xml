@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +14,9 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="324" />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" />
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -54,7 +50,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="ts.external.directory.path" value="D:\Docs\Source\DT-UI\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -156,7 +152,8 @@
       <workItem from="1565255659095" duration="2939000" />
       <workItem from="1565278324697" duration="2459000" />
       <workItem from="1565602081375" duration="251000" />
-      <workItem from="1565602367836" duration="22285000" />
+      <workItem from="1565602367836" duration="26057000" />
+      <workItem from="1565724269553" duration="7707000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -305,7 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565699450521</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Extracted route selector component">
+      <created>1565710914075</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1565710914075</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Switched route selector to drop down">
+      <created>1565778664000</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1565778664000</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +351,9 @@
     <MESSAGE value="publish" />
     <MESSAGE value="publish v0.5" />
     <MESSAGE value="fixed prod api url" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed prod api url" />
+    <MESSAGE value="Extracted route selector component" />
+    <MESSAGE value="Switched route selector to drop down" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switched route selector to drop down" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
