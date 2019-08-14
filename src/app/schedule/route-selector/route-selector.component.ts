@@ -5,7 +5,6 @@ import {Route} from '../../Route';
 import {ScheduleService} from '../../../services/schedule.service';
 import {ActivatedRoute, ParamMap} from '@angular/router';
 
-
 @Component({
   selector: 'app-route-selector',
   templateUrl: './route-selector.component.html',

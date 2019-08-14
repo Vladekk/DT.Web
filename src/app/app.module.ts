@@ -8,6 +8,7 @@ import {ScheduleComponent} from './schedule/schedule.component';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import {RouteSelectorComponent} from './schedule/route-selector/route-selector.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgxSpinnerModule} from 'ngx-spinner';
 
 const appRoutes: Routes = [
   //{path: 'crisis-center', component: CrisisListComponent},
@@ -24,7 +25,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    HttpClientModule, NgbModule,
+    HttpClientModule, NgbModule, NgxSpinnerModule,
     RouterModule.forRoot(
       appRoutes,
       {enableTracing: !environment.production} // <-- debugging purposes only
