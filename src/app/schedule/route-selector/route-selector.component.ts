@@ -15,7 +15,7 @@ import {ActivatedRoute, ParamMap} from '@angular/router';
 export class RouteSelectorComponent implements OnInit {
 
   public Routes: IRoute[] = [];
-  private RouteNumber: string;
+  RouteNumber: string;
 
   constructor(private scheduleService: ScheduleService, private activatedRoute: ActivatedRoute) {
   }

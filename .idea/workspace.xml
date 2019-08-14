@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es2015.bdf94920b67f89012391.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es5.13529db0318f715c504f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/polyfills-es2015.e4a1185e6871d06f842f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/polyfills-es5.72845f0db871433d1fef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/runtime-es2015.10a1f01eef199006286d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/runtime-es5.9ad22a88fcc70a015907.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/styles.3ff695c00d717f2d2a11.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +163,7 @@
       <workItem from="1565278324697" duration="2459000" />
       <workItem from="1565602081375" duration="251000" />
       <workItem from="1565602367836" duration="26057000" />
-      <workItem from="1565724269553" duration="10214000" />
+      <workItem from="1565724269553" duration="10346000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -328,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565791587295</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added loading spinner">
+      <created>1565792796107</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1565792796107</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
