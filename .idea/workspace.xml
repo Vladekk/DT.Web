@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main-es2015.bdf94920b67f89012391.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main-es5.13529db0318f715c504f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/polyfills-es2015.e4a1185e6871d06f842f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/polyfills-es5.72845f0db871433d1fef.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/runtime-es2015.10a1f01eef199006286d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/runtime-es5.9ad22a88fcc70a015907.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/styles.3ff695c00d717f2d2a11.css" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +56,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
-    <property name="ts.external.directory.path" value="D:\Docs\Source\DT-UI\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\Docs\Source\DangularTransport\DT-UI\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -80,7 +75,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.preparePublish">
+  <component name="RunManager" selected="Compound.Build and run">
+    <configuration name="Build and run" type="CompoundRunConfigurationType">
+      <toRun name="Angular Application" type="JavascriptDebugType" />
+      <toRun name="Angular CLI Server" type="js.build_tools.npm" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="Angular Application" type="JavascriptDebugType" />
+      <toRun name="Angular CLI Server" type="js.build_tools.npm" />
+      <method v="2" />
+    </configuration>
     <configuration name="Tests" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/karma.conf.js" />
       <karma-package-dir value="$PROJECT_DIR$/node_modules/@angular/cli" />
@@ -131,6 +136,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Compound.Build and run" />
       <item itemvalue="JavaScript Debug.Angular Application" />
       <item itemvalue="Karma.Tests" />
       <item itemvalue="Karma.app.component.spec.ts" />
@@ -163,7 +169,8 @@
       <workItem from="1565278324697" duration="2459000" />
       <workItem from="1565602081375" duration="251000" />
       <workItem from="1565602367836" duration="26057000" />
-      <workItem from="1565724269553" duration="10346000" />
+      <workItem from="1565724269553" duration="12752000" />
+      <workItem from="1565860278246" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -347,7 +354,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565792796107</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added loading spinner">
+      <created>1565792873782</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1565792873782</updated>
+    </task>
+    <task id="LOCAL-00028" summary="publish">
+      <created>1565792972489</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1565792972489</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,13 +400,13 @@
     <MESSAGE value="Added routing" />
     <MESSAGE value="Added route selector" />
     <MESSAGE value="Logic to support route selection" />
-    <MESSAGE value="publish" />
     <MESSAGE value="publish v0.5" />
     <MESSAGE value="fixed prod api url" />
     <MESSAGE value="Extracted route selector component" />
     <MESSAGE value="Switched route selector to drop down" />
     <MESSAGE value="Added loading spinner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added loading spinner" />
+    <MESSAGE value="publish" />
+    <option name="LAST_COMMIT_MESSAGE" value="publish" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

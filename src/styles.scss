@@ -1,0 +1,5 @@
+$font-family-sans-serif: Calibri, Verdana, sans-serif;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif ;
+@import '~bootstrap/scss/bootstrap';

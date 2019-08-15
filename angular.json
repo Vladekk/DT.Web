@@ -24,14 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
           "configurations": {
             "production": {
               "outputPath": "docs",
-
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -70,7 +69,6 @@
           "configurations": {
             "production": {
               "browserTarget": "DT-UI:build:production"
-
             }
           }
         },
@@ -123,6 +121,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "DT-UI"
+    }
+  },
+  "defaultProject": "DT-UI",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
