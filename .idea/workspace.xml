@@ -66,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Compound.Build and run">
+  <component name="RunManager" selected="npm.preparePublish">
     <configuration name="Build and run" type="CompoundRunConfigurationType">
       <toRun name="Angular Application" type="JavascriptDebugType" />
       <toRun name="Angular CLI Server" type="js.build_tools.npm" />
@@ -161,7 +161,7 @@
       <workItem from="1565602081375" duration="251000" />
       <workItem from="1565602367836" duration="26057000" />
       <workItem from="1565724269553" duration="12752000" />
-      <workItem from="1565860278246" duration="1985000" />
+      <workItem from="1565860278246" duration="2261000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -359,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565792972489</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="0.9.0">
+      <created>1565871434954</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1565871434954</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +404,8 @@
     <MESSAGE value="Switched route selector to drop down" />
     <MESSAGE value="Added loading spinner" />
     <MESSAGE value="publish" />
-    <option name="LAST_COMMIT_MESSAGE" value="publish" />
+    <MESSAGE value="0.9.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.9.0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
