@@ -1,12 +1,13 @@
 import {HttpClient} from '@angular/common/http';
 import {Inject, Injectable} from '@angular/core';
+import {addMinutes} from 'date-fns';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
-import {IGetScheduleInfo} from '../IGetScheduleInfo';
-import {ConfigService} from './config.service';
-import {Route} from '../app/Route';
 import {ISimpleLogService} from '../../../DT-Backend/src/services/SimpleLogService/ISimpleLogService';
 import {logServiceToken} from '../app/logServiceToken';
+import {Route} from '../app/Route';
+import {IGetScheduleInfo} from '../IGetScheduleInfo';
+import {ConfigService} from './config.service';
 
 
 @Injectable({
@@ -19,7 +20,8 @@ export class ScheduleService implements IGetScheduleInfo {
   private takeHowMuch = 3;
 
 
-  constructor(private http: HttpClient, private configService: ConfigService, @Inject(logServiceToken) private logService: ISimpleLogService) {
+  constructor(private http: HttpClient, private configService: ConfigService,
+              @Inject(logServiceToken) private logService: ISimpleLogService) {
 
 
     this.routeDataSupplier = this.http.post<Route[]>(configService.ScheduleServiceUrl + 'GetAllRoutes', {}, {
@@ -29,9 +31,15 @@ export class ScheduleService implements IGetScheduleInfo {
   }
 
   getProperDate = (str): Date => {
-    const date = new Date(Date.parse(str));
+    let date = new Date(Date.parse(str));
+    const offset = new Date(Date.parse(new Date().toLocaleString('en-US', {timeZone: 'Europe/Riga'}))).getTimezoneOffset()
+      -
+      new Date().getTimezoneOffset();
+    date = addMinutes(date, -offset);
     return date;
-  };
+
+    // return addMinutes(date, now.getTimezoneOffset());
+  }
 
   fixDates = ([fromCenter, toCenter]: [string[], string[]]) => {
     // this is hack to parse dates in json
@@ -39,7 +47,7 @@ export class ScheduleService implements IGetScheduleInfo {
       [fromCenter.map(this.getProperDate).slice(0, this.takeHowMuch),
         toCenter.map(this.getProperDate).slice(0, this.takeHowMuch)];
     return result;
-  };
+  }
 
 
   GetScheduleInfo(busNumber: string): Observable<[Date[], Date[]]> {
