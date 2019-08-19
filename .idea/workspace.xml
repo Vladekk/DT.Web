@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/main-es2015.3b938fd274a2fb7db706.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es2015.2e8ec933b19d5a1e56d1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es5.d6906024d17153fac668.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/polyfills-es5.72845f0db871433d1fef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/runtime-es5.9ad22a88fcc70a015907.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Angular Application">
+  <component name="RunManager" selected="npm.preparePublish">
     <configuration name="Build and run" type="CompoundRunConfigurationType">
       <toRun name="Angular Application" type="JavascriptDebugType" />
       <toRun name="Angular CLI Server" type="js.build_tools.npm" />
