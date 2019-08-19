@@ -9,6 +9,7 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import {RouteSelectorComponent} from './schedule/route-selector/route-selector.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {NgxSpinnerModule} from 'ngx-spinner';
+import {consoleLogServiceInstance, logServiceToken} from './logServiceToken';
 
 const appRoutes: Routes = [
   //{path: 'crisis-center', component: CrisisListComponent},
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
   ],
   providers: [{
     provide: LocationStrategy, useClass: HashLocationStrategy
-  }],
+  },
+    {provide: logServiceToken, useValue: consoleLogServiceInstance}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

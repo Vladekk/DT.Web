@@ -1,10 +1,12 @@
 import {HttpClient} from '@angular/common/http';
-import {Injectable} from '@angular/core';
+import {Inject, Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {IGetScheduleInfo} from '../IGetScheduleInfo';
 import {ConfigService} from './config.service';
 import {Route} from '../app/Route';
+import {ISimpleLogService} from '../../../DT-Backend/src/services/SimpleLogService/ISimpleLogService';
+import {logServiceToken} from '../app/logServiceToken';
 
 
 @Injectable({
@@ -17,7 +19,7 @@ export class ScheduleService implements IGetScheduleInfo {
   private takeHowMuch = 3;
 
 
-  constructor(private http: HttpClient, private configService: ConfigService) {
+  constructor(private http: HttpClient, private configService: ConfigService, @Inject(logServiceToken) private logService: ISimpleLogService) {
 
 
     this.routeDataSupplier = this.http.post<Route[]>(configService.ScheduleServiceUrl + 'GetAllRoutes', {}, {
@@ -41,6 +43,7 @@ export class ScheduleService implements IGetScheduleInfo {
 
 
   GetScheduleInfo(busNumber: string): Observable<[Date[], Date[]]> {
+    this.logService.Log(`Subscribing to fetch route data ${busNumber}`);
     return this.http.post<[string[], string[]]>(this.configService.ScheduleServiceUrl + 'GetClosestRuns', {BusNumber: busNumber}, {
       headers:
         {'Content-Type': 'application/json'}
