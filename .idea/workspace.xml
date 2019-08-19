@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="0.9.0">
-      <change afterPath="$PROJECT_DIR$/src/app/ConsoleLogService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/hz.ts" afterDir="false" />
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/main-es2015.2e8ec933b19d5a1e56d1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/main-es5.d6906024d17153fac668.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es2015.db037d857f11fadb6ce1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es5.2785dfd39a3114516909.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +172,7 @@
       <workItem from="1565602367836" duration="26057000" />
       <workItem from="1565724269553" duration="12752000" />
       <workItem from="1565860278246" duration="2261000" />
-      <workItem from="1566203905813" duration="3485000" />
+      <workItem from="1566203905813" duration="4402000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -375,7 +377,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565871434954</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Added logging">
+      <created>1566208659569</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1566208659569</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added logging">
+      <created>1566208749433</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1566208749433</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +430,8 @@
     <MESSAGE value="Added loading spinner" />
     <MESSAGE value="publish" />
     <MESSAGE value="0.9.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.9.0" />
+    <MESSAGE value="Added logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added logging" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
