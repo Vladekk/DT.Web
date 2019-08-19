@@ -31,6 +31,12 @@ export class ScheduleService implements IGetScheduleInfo {
 
   getProperDate = (str): Date => {
     let date = new Date(Date.parse(str));
+    // if (Intl.DateTimeFormat().resolvedOptions().timeZone !== 'Europe/Riga') {
+    //
+    //   now = convertFromTimeZone(now, {timeZone: 'Europe/Riga'});
+    // }
+    // let offset = new Date().getTimezoneOffset();
+    // addMinutes(date,)
     // const offset = new Date(Date.parse(new Date().toLocaleString('en-US', {timeZone: 'Europe/Riga'}))).getTimezoneOffset()
     //   -
     //   new Date().getTimezoneOffset();
@@ -38,7 +44,7 @@ export class ScheduleService implements IGetScheduleInfo {
     return date;
 
     // return addMinutes(date, now.getTimezoneOffset());
-  }
+  };
 
   fixDates = ([fromCenter, toCenter]: [string[], string[]]) => {
     // this is hack to parse dates in json
@@ -46,7 +52,7 @@ export class ScheduleService implements IGetScheduleInfo {
       [fromCenter.map(this.getProperDate).slice(0, this.takeHowMuch),
         toCenter.map(this.getProperDate).slice(0, this.takeHowMuch)];
     return result;
-  }
+  };
 
 
   GetScheduleInfo(busNumber: string): Observable<[Date[], Date[]]> {
