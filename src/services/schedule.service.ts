@@ -8,7 +8,6 @@ import {Route} from '../app/Route';
 import {IGetScheduleInfo} from '../IGetScheduleInfo';
 import {ConfigService} from './config.service';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -31,19 +30,8 @@ export class ScheduleService implements IGetScheduleInfo {
 
   getProperDate = (str): Date => {
     let date = new Date(Date.parse(str));
-    // if (Intl.DateTimeFormat().resolvedOptions().timeZone !== 'Europe/Riga') {
-    //
-    //   now = convertFromTimeZone(now, {timeZone: 'Europe/Riga'});
-    // }
-    // let offset = new Date().getTimezoneOffset();
-    // addMinutes(date,)
-    // const offset = new Date(Date.parse(new Date().toLocaleString('en-US', {timeZone: 'Europe/Riga'}))).getTimezoneOffset()
-    //   -
-    //   new Date().getTimezoneOffset();
-    //date = addMinutes(date, -offset);
     return date;
 
-    // return addMinutes(date, now.getTimezoneOffset());
   };
 
   fixDates = ([fromCenter, toCenter]: [string[], string[]]) => {
