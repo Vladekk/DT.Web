@@ -1,6 +1,5 @@
 import {HttpClient} from '@angular/common/http';
 import {Inject, Injectable} from '@angular/core';
-import {addMinutes} from 'date-fns';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {ISimpleLogService} from '../../../DT-Backend/src/services/SimpleLogService/ISimpleLogService';
@@ -32,10 +31,10 @@ export class ScheduleService implements IGetScheduleInfo {
 
   getProperDate = (str): Date => {
     let date = new Date(Date.parse(str));
-    const offset = new Date(Date.parse(new Date().toLocaleString('en-US', {timeZone: 'Europe/Riga'}))).getTimezoneOffset()
-      -
-      new Date().getTimezoneOffset();
-    date = addMinutes(date, -offset);
+    // const offset = new Date(Date.parse(new Date().toLocaleString('en-US', {timeZone: 'Europe/Riga'}))).getTimezoneOffset()
+    //   -
+    //   new Date().getTimezoneOffset();
+    //date = addMinutes(date, -offset);
     return date;
 
     // return addMinutes(date, now.getTimezoneOffset());
