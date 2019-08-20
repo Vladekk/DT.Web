@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="0.13.0">
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="Fixing tz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es2015.97dec4640c9af01590db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es5.5967b23fb6a4de04a7eb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/polyfills-es2015.e4a1185e6871d06f842f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/polyfills-es5.72845f0db871433d1fef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/runtime-es2015.10a1f01eef199006286d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/runtime-es5.9ad22a88fcc70a015907.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/styles.8250e719a5e29d3580a8.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.preparePublish">
+  <component name="RunManager" selected="Compound.Build and run">
     <configuration name="Build and run" type="CompoundRunConfigurationType">
       <toRun name="Angular Application" type="JavascriptDebugType" />
       <toRun name="Angular CLI Server" type="js.build_tools.npm" />
@@ -434,7 +446,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566222217617</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Fixing tz">
+      <created>1566294886478</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1566294886478</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Fixing tz">
+      <created>1566294989873</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1566294989873</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +506,8 @@
     <MESSAGE value="0.12.0" />
     <MESSAGE value="fixing timezone" />
     <MESSAGE value="0.13.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.13.0" />
+    <MESSAGE value="Fixing tz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing tz" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

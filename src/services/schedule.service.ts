@@ -7,7 +7,7 @@ import {logServiceToken} from '../app/logServiceToken';
 import {Route} from '../app/Route';
 import {IGetScheduleInfo} from '../IGetScheduleInfo';
 import {ConfigService} from './config.service';
-import {DataService} from '../../../DT-Backend/src/services/DataService/dataService';
+import {DtUtils} from '../../../DT-Backend/src/services/DataService/dtUtils';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +31,7 @@ export class ScheduleService implements IGetScheduleInfo {
 
   getProperDate = (str): Date => {
     let date = new Date(Date.parse(str));
-    return DataService.DateToUtcAndBack(date, false);
+    return DtUtils.DateToUtcAndBack(date, false);
 
   };
 
