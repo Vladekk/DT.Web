@@ -4,7 +4,7 @@ import {environment} from '../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class ConfigService {
+export default class ConfigService {
 
   constructor() {
   }
