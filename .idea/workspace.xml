@@ -82,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Compound.Build and run">
+  <component name="RunManager" selected="npm.preparePublish">
     <configuration name="Build and run" type="CompoundRunConfigurationType">
       <toRun name="Angular Application" type="JavascriptDebugType" />
       <toRun name="Angular CLI Server" type="js.build_tools.npm" />
