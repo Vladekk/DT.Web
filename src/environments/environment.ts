@@ -7,8 +7,7 @@ export const environment = {
   expirationTtl : 3600,
   ScheduleServiceUrl: 'http://localhost:3000/api/',
   // ScheduleServiceUrl: 'https://upside.down.pictures/api/GetClosestRuns',
-  // SchedulePageUrl: 'http://satiksme.daugavpils.lv/autobuss-nr-17a-autoosta-csdd-jaunforstadte',
-  AllSchedulesUrl: 'http://www.satiksme.daugavpils.lv/autobusu-kustibu-saraksts'
+  // SchedulePageUrl: 'http://satiksme.daugavpils.lv/autobuss-nr-17a-autoosta-csdd-jaunforstadte'
 };
 
 /*

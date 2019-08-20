@@ -2,7 +2,7 @@ import {HttpClient} from '@angular/common/http';
 import {Inject, Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
-import {DtUtils} from '../../../DT-Backend/src/services/DataService/dtUtils';
+import {ConversionDirection, DtUtils} from '../../../DT-Backend/src/services/DtUtils/dtUtils';
 import {ISimpleLogService} from '../../../DT-Backend/src/services/SimpleLogService/ISimpleLogService';
 import {logServiceToken} from '../app/logServiceToken';
 import {Route} from '../app/Route';
@@ -15,13 +15,10 @@ import {ConfigService} from './config.service';
 export class ScheduleService implements IGetScheduleInfo {
 
   private readonly routeDataSupplier: Observable<Route[]>;
-
   private takeHowMuch = 3;
-
 
   constructor(private http: HttpClient, private configService: ConfigService,
               @Inject(logServiceToken) private logService: ISimpleLogService) {
-
 
     this.routeDataSupplier = this.http.post<Route[]>(configService.ScheduleServiceUrl + 'GetAllRoutes', {}, {
       headers:
@@ -30,8 +27,8 @@ export class ScheduleService implements IGetScheduleInfo {
   }
 
   getProperDate = (str): Date => {
-    let date = new Date(Date.parse(str));
-    return DtUtils.DateToUtcAndBack(date, false);
+    const date = new Date(Date.parse(str));
+    return DtUtils.DateToUtcAndBack(date, ConversionDirection.FromUtc);
 
   };
 
@@ -42,7 +39,6 @@ export class ScheduleService implements IGetScheduleInfo {
         toCenter.map(this.getProperDate).slice(0, this.takeHowMuch)];
     return result;
   };
-
 
   GetScheduleInfo(busNumber: string): Observable<[Date[], Date[]]> {
     this.logService.Log(`Subscribing to fetch route data ${busNumber}`);
@@ -57,6 +53,3 @@ export class ScheduleService implements IGetScheduleInfo {
     return this.routeDataSupplier;
   }
 }
-
-
-

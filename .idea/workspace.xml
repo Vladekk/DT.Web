@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/IDictionary.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/config.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/config.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript" />
     <property name="javascript.karma.karma_node_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DT-Backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.preparePublish">
+  <component name="RunManager" selected="Compound.Build and run">
     <configuration name="Build and run" type="CompoundRunConfigurationType">
       <toRun name="Angular Application" type="JavascriptDebugType" />
       <toRun name="Angular CLI Server" type="js.build_tools.npm" />
@@ -79,6 +83,28 @@
     <configuration default="true" type="CompoundRunConfigurationType">
       <toRun name="Angular Application" type="JavascriptDebugType" />
       <toRun name="Angular CLI Server" type="js.build_tools.npm" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ConfigService" type="JavaScriptTestRunnerKarma" temporary="true" nameIsGenerated="true">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <karma-package-dir value="$PROJECT_DIR$/node_modules/@angular/cli" />
+      <node-interpreter value="project" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-names>
+        <test-name value="ConfigService" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="RouteSelectorComponent" type="JavaScriptTestRunnerKarma" temporary="true" nameIsGenerated="true">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <karma-package-dir value="$PROJECT_DIR$/node_modules/@angular/cli" />
+      <node-interpreter value="project" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-names>
+        <test-name value="RouteSelectorComponent" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="Tests" type="JavaScriptTestRunnerKarma">
@@ -95,6 +121,15 @@
       <envs />
       <scope-kind value="TEST_FILE" />
       <test-file-path value="$PROJECT_DIR$/src/app/app.component.spec.ts" />
+      <method v="2" />
+    </configuration>
+    <configuration name="route-selector.component.spec.ts" type="JavaScriptTestRunnerKarma" temporary="true" nameIsGenerated="true">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <karma-package-dir value="$PROJECT_DIR$/node_modules/@angular/cli" />
+      <node-interpreter value="project" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file-path value="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.spec.ts" />
       <method v="2" />
     </configuration>
     <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
@@ -135,12 +170,18 @@
       <item itemvalue="JavaScript Debug.Angular Application" />
       <item itemvalue="Karma.Tests" />
       <item itemvalue="Karma.app.component.spec.ts" />
+      <item itemvalue="Karma.route-selector.component.spec.ts" />
+      <item itemvalue="Karma.RouteSelectorComponent" />
+      <item itemvalue="Karma.ConfigService" />
       <item itemvalue="npm.preparePublish" />
       <item itemvalue="npm.Angular CLI Server" />
       <item itemvalue="Protractor.E2E Tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Karma.ConfigService" />
+        <item itemvalue="Karma.RouteSelectorComponent" />
+        <item itemvalue="Karma.route-selector.component.spec.ts" />
         <item itemvalue="Karma.app.component.spec.ts" />
       </list>
     </recent_temporary>
@@ -167,6 +208,9 @@
       <workItem from="1565724269553" duration="12752000" />
       <workItem from="1565860278246" duration="2261000" />
       <workItem from="1566203905813" duration="8215000" />
+      <workItem from="1566306938860" duration="20000" />
+      <workItem from="1566307071600" duration="770000" />
+      <workItem from="1566309651290" duration="653000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -476,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566302555730</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="timezone fix">
+      <created>1566304068037</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1566304068037</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
