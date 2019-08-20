@@ -2,12 +2,12 @@ import {HttpClient} from '@angular/common/http';
 import {Inject, Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
+import {DtUtils} from '../../../DT-Backend/src/services/DataService/dtUtils';
 import {ISimpleLogService} from '../../../DT-Backend/src/services/SimpleLogService/ISimpleLogService';
 import {logServiceToken} from '../app/logServiceToken';
 import {Route} from '../app/Route';
 import {IGetScheduleInfo} from '../IGetScheduleInfo';
 import {ConfigService} from './config.service';
-import {DtUtils} from '../../../DT-Backend/src/services/DataService/dtUtils';
 
 @Injectable({
   providedIn: 'root'
