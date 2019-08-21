@@ -1,5 +1,5 @@
 import {HttpClient} from '@angular/common/http';
-import {Inject, Injectable} from '@angular/core';
+import {Inject} from '@angular/core';
 import bind from 'bind-decorator';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
@@ -10,9 +10,6 @@ import {Route} from '../app/Route';
 import {IGetScheduleInfo} from '../IGetScheduleInfo';
 import ConfigService from './config.service';
 
-@Injectable({
-  providedIn: 'root'
-})
 export class ScheduleService implements IGetScheduleInfo {
 
   private readonly routeDataSupplier: Observable<Route[]>;

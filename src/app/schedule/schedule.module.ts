@@ -4,10 +4,10 @@ import {ScheduleComponent} from './schedule.component';
 import {RouterModule, Routes} from '@angular/router';
 import {RouteSelectorComponent} from './route-selector/route-selector.component';
 import {NgbDropdownModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {ScheduleService} from '../../services/schedule.service';
 
 const routes: Routes = [
-  {path: 'Route/:routeNumber', component: ScheduleComponent},
-  {path: '', redirectTo: 'Route/17A', pathMatch: 'full'},
+  {path: 'Route/:routeNumber', component: ScheduleComponent}
   // {path: '**', component: PageNotFoundComponent}
 ];
 
@@ -19,7 +19,8 @@ const routes: Routes = [
   exports: [
     ScheduleComponent, RouterModule
   ],
-  bootstrap: [ScheduleComponent]
+  bootstrap: [ScheduleComponent],
+  providers: [ScheduleService]
 
 })
 export class ScheduleModule {

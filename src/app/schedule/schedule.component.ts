@@ -5,8 +5,6 @@ import {ActivatedRoute, ParamMap} from '@angular/router';
 import {NgxSpinnerService} from 'ngx-spinner';
 import {logServiceToken} from '../logServiceToken';
 
-//import {RouteSelector} from './route-selector/route-selector.component'
-
 @Component({
   selector: 'app-schedule',
   templateUrl: './schedule.component.html',

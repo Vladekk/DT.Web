@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/schedule/schedule.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +213,7 @@
       <workItem from="1566306938860" duration="20000" />
       <workItem from="1566307071600" duration="770000" />
       <workItem from="1566309651290" duration="2276000" />
-      <workItem from="1566376892429" duration="2310000" />
+      <workItem from="1566376892429" duration="4786000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -528,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566304068037</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Moved route/schedule to separate module">
+      <created>1566381892792</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1566381892792</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +559,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added github pages publish dir (docs)&#10;Added data service env urls" />
     <MESSAGE value="Release 0.1" />
     <MESSAGE value="Switched to POST request" />
     <MESSAGE value="Switched to POST request, version 0.1.0" />
@@ -575,7 +583,8 @@
     <MESSAGE value="Fixing tz" />
     <MESSAGE value="0.15.0" />
     <MESSAGE value="timezone fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="timezone fix" />
+    <MESSAGE value="Moved route/schedule to separate module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved route/schedule to separate module" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
