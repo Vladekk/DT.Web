@@ -1,8 +1,8 @@
-<app-route-selector></app-route-selector>
+<app-route-selector (close)="suppressUpdates(false)" (open)="suppressUpdates(true)"></app-route-selector>
 <div class="row">
   <ul class="from">
     <li>From autoosta</li>
-    <li *ngFor="let row of fromCenterSchedule">
+    <li *ngFor="let row of fromCenterSchedule$ | async" >
       {{ row | date:'shortTime' }}
     </li>
   </ul>
@@ -10,7 +10,7 @@
 <div class="row">
   <ul class="to">
     <li>From end station</li>
-    <li *ngFor="let row of toCenterSchedule">
+    <li *ngFor="let row of toCenterSchedule$ | async" >
       {{ row | date:'shortTime' }}
     </li>
   </ul>

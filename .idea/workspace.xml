@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -213,7 +216,7 @@
       <workItem from="1566306938860" duration="20000" />
       <workItem from="1566307071600" duration="770000" />
       <workItem from="1566309651290" duration="2276000" />
-      <workItem from="1566376892429" duration="4786000" />
+      <workItem from="1566376892429" duration="16800000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -537,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566381892792</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Changed how ScheduleService is resolved in DI (only for ScheduleComponent now)">
+      <created>1566385438312</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1566385438312</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +569,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Release 0.1" />
     <MESSAGE value="Switched to POST request" />
     <MESSAGE value="Switched to POST request, version 0.1.0" />
     <MESSAGE value="Changed api for getting routes to use class" />
@@ -584,7 +593,8 @@
     <MESSAGE value="0.15.0" />
     <MESSAGE value="timezone fix" />
     <MESSAGE value="Moved route/schedule to separate module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved route/schedule to separate module" />
+    <MESSAGE value="Changed how ScheduleService is resolved in DI (only for ScheduleComponent now)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed how ScheduleService is resolved in DI (only for ScheduleComponent now)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

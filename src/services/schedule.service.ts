@@ -25,13 +25,13 @@ export class ScheduleService implements IGetScheduleInfo {
   }
 
   @bind
-  getProperDate (str): Date {
+  private getProperDate (str): Date {
     const date = new Date(Date.parse(str));
     return DtUtils.DateToUtcAndBack(date, ConversionDirection.FromUtc);
 
   };
   @bind
-  fixDates ([fromCenter, toCenter]: [string[], string[]]) {
+  private fixDates ([fromCenter, toCenter]: [string[], string[]]) {
     // this is hack to parse dates in json
     const result: [Date[], Date[]] =
       [fromCenter.map(this.getProperDate).slice(0, this.takeHowMuch),
