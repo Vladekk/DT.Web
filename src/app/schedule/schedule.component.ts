@@ -18,8 +18,8 @@ import {IRunVm} from './IRunVm';
 })
 export class ScheduleComponent implements OnInit, OnDestroy {
   now: Date = new Date();
-  private fromCenterSchedule$: Observable<IRunVm[]>;
-  private toCenterSchedule$: Observable<IRunVm[]>;
+  public fromCenterSchedule$: Observable<IRunVm[]>;
+  public toCenterSchedule$: Observable<IRunVm[]>;
   private subscription: Subscription = new Subscription();
 
   public fromCenterSchedule: Date[];

@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="0.16.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main-es2015.55d283524e0fb77edf3b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main-es5.dfc848e9102f5fa47254.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/polyfills-es2015.e4a1185e6871d06f842f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/polyfills-es5.72845f0db871433d1fef.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/runtime-es2015.10a1f01eef199006286d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/runtime-es5.9ad22a88fcc70a015907.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/styles.8250e719a5e29d3580a8.css" beforeDir="false" />
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -223,13 +210,6 @@
       <workItem from="1566307071600" duration="770000" />
       <workItem from="1566309651290" duration="2276000" />
       <workItem from="1566376892429" duration="22910000" />
-    </task>
-    <task id="LOCAL-00004" summary="Added github pages publish dir (docs)&#10;Added data service env urls">
-      <created>1565105336512</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1565105336512</updated>
     </task>
     <task id="LOCAL-00005" summary="Release 0.1">
       <created>1565256556213</created>
@@ -570,9 +550,16 @@
       <option name="project" value="DT.Web" />
       <option name="type" value="BUG" />
       <updated>1566485538082</updated>
-      <workItem from="1566485144718" duration="505000" />
+      <workItem from="1566485144718" duration="555000" />
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="0.16.0">
+      <created>1566485659305</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1566485659305</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
