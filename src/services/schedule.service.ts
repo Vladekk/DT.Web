@@ -13,7 +13,7 @@ import ConfigService from './config.service';
 export class ScheduleService implements IGetScheduleInfo {
 
   private readonly routeDataSupplier: Observable<Route[]>;
-  private takeHowMuch = 3;
+  private takeHowMuch = 4;
 
   constructor(private http: HttpClient, private configService: ConfigService,
               @Inject(logServiceToken) private logService: ISimpleLogService) {

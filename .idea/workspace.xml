@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" afterDir="false" />
-    </list>
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,21 +207,7 @@
       <workItem from="1566306938860" duration="20000" />
       <workItem from="1566307071600" duration="770000" />
       <workItem from="1566309651290" duration="2276000" />
-      <workItem from="1566376892429" duration="19665000" />
-    </task>
-    <task id="LOCAL-00001" summary="Refactoring and limit of row count">
-      <created>1565095876489</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1565095876489</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added github pages publish dir (docs)&#10;Added data service env urls">
-      <created>1565103908742</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1565103908742</updated>
+      <workItem from="1566376892429" duration="22843000" />
     </task>
     <task id="LOCAL-00003" summary="Added github pages publish dir (docs)&#10;Added data service env urls">
       <created>1565104890547</created>
@@ -555,8 +538,27 @@
       <option name="project" value="LOCAL" />
       <updated>1566478209716</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
-    <servers />
+    <task id="LOCAL-00050" summary="Refactoring of model (avoiding triggering change detection)">
+      <created>1566478468123</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1566478468124</updated>
+    </task>
+    <task id="LOCAL-00051" summary="#1&#10;Added highlight&#10;#2&#10;Set to 10 minutes, fixed bug where it does not work">
+      <created>1566485015611</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1566485015612</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
+    <servers>
+      <GitHub url="https://github.com">
+        <option name="repoAuthor" value="Vladekk" />
+        <option name="repoName" value="DT.Web" />
+      </GitHub>
+    </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -575,9 +577,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Changed api for getting routes to use class" />
     <MESSAGE value="Added routing" />
     <MESSAGE value="Added route selector" />
     <MESSAGE value="Logic to support route selection" />
@@ -602,7 +602,8 @@
     <MESSAGE value="Changed how ScheduleService is resolved in DI (only for ScheduleComponent now)" />
     <MESSAGE value="Refactoring of data fetching (async pipe)" />
     <MESSAGE value="Refactoring of model (avoiding triggering change detection)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring of model (avoiding triggering change detection)" />
+    <MESSAGE value="#1&#10;Added highlight&#10;#2&#10;Set to 10 minutes, fixed bug where it does not work" />
+    <option name="LAST_COMMIT_MESSAGE" value="#1&#10;Added highlight&#10;#2&#10;Set to 10 minutes, fixed bug where it does not work" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
