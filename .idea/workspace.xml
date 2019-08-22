@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/route-selector/route-selector.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/schedule.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/schedule.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +210,7 @@
       <workItem from="1566306938860" duration="20000" />
       <workItem from="1566307071600" duration="770000" />
       <workItem from="1566309651290" duration="2276000" />
-      <workItem from="1566376892429" duration="16800000" />
+      <workItem from="1566376892429" duration="19665000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and limit of row count">
       <created>1565095876489</created>
@@ -547,7 +541,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566385438312</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Refactoring of data fetching (async pipe)">
+      <created>1566475649037</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1566475649037</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Refactoring of model (avoiding triggering change detection)">
+      <created>1566478209716</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1566478209716</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,8 +577,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Switched to POST request" />
-    <MESSAGE value="Switched to POST request, version 0.1.0" />
     <MESSAGE value="Changed api for getting routes to use class" />
     <MESSAGE value="Added routing" />
     <MESSAGE value="Added route selector" />
@@ -594,7 +600,9 @@
     <MESSAGE value="timezone fix" />
     <MESSAGE value="Moved route/schedule to separate module" />
     <MESSAGE value="Changed how ScheduleService is resolved in DI (only for ScheduleComponent now)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed how ScheduleService is resolved in DI (only for ScheduleComponent now)" />
+    <MESSAGE value="Refactoring of data fetching (async pipe)" />
+    <MESSAGE value="Refactoring of model (avoiding triggering change detection)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring of model (avoiding triggering change detection)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
