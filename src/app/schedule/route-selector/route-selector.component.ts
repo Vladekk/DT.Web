@@ -20,7 +20,7 @@ export class RouteSelectorComponent implements OnInit {
 
   @Output() open: EventEmitter<any> = new EventEmitter();
   @Output() close: EventEmitter<any> = new EventEmitter();
-  private routes$: Observable<Route[]>;
+  public routes$: Observable<Route[]>;
 
   public onOpenChange(isOpen: boolean) {
     if (isOpen) {
