@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="" />
+    <list default="true" id="ba02fb44-4f16-444c-8c71-407242f75fca" name="Default Changelist" comment="0.16.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es2015.55d283524e0fb77edf3b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/main-es5.dfc848e9102f5fa47254.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/polyfills-es2015.e4a1185e6871d06f842f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/polyfills-es5.72845f0db871433d1fef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/runtime-es2015.10a1f01eef199006286d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/runtime-es5.9ad22a88fcc70a015907.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/styles.8250e719a5e29d3580a8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/schedule.component.ts" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -554,8 +569,8 @@
       <option name="presentableId" value="DT.Web-1" />
       <option name="project" value="DT.Web" />
       <option name="type" value="BUG" />
-      <updated>1566485183549</updated>
-      <workItem from="1566485144718" duration="238000" />
+      <updated>1566485538082</updated>
+      <workItem from="1566485144718" duration="505000" />
     </task>
     <option name="localTasksCounter" value="52" />
     <option name="clearContext" value="false" />
@@ -586,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added route selector" />
     <MESSAGE value="Logic to support route selection" />
     <MESSAGE value="publish v0.5" />
     <MESSAGE value="fixed prod api url" />
@@ -611,7 +625,8 @@
     <MESSAGE value="Refactoring of model (avoiding triggering change detection)" />
     <MESSAGE value="#1&#10;Added highlight&#10;#2&#10;Set to 10 minutes, fixed bug where it does not work" />
     <MESSAGE value="DT.Web-1 Allow to see bus runs a few minutes before current time&#10;DT.Web-2 Highlight closest bus run just after current time" />
-    <option name="LAST_COMMIT_MESSAGE" value="DT.Web-1 Allow to see bus runs a few minutes before current time&#10;DT.Web-2 Highlight closest bus run just after current time" />
+    <MESSAGE value="0.16.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.16.0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

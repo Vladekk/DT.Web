@@ -22,9 +22,8 @@ export class ScheduleComponent implements OnInit, OnDestroy {
   private toCenterSchedule$: Observable<IRunVm[]>;
   private subscription: Subscription = new Subscription();
 
-  fromCenterSchedule: Date[];
-  toCenterSchedule: Date[];
-  private error: any;
+  public fromCenterSchedule: Date[];
+  public toCenterSchedule: Date[];
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
@@ -41,7 +40,7 @@ export class ScheduleComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
 
     const intervalSub =
-      interval(1000).subscribe((num => {
+      interval(1000).subscribe((() => {
         this.now = new Date();
       }));
 
@@ -94,16 +93,6 @@ export class ScheduleComponent implements OnInit, OnDestroy {
         .pipe(first(),
           map(([, tc]) => tc),
           map(this.MapToVm));
-    // .subscribe(([fc, tc]: [Date[], Date[]]) => {
-    //     this.logService.Log(`Received route data`);
-    //     this.logService.Log(fc);
-    //     this.logService.Log(tc);
-    //     this.fromCenterSchedule = fc;
-    //     this.toCenterSchedule = tc;
-    //     this.spinner.hide();
-    //   },
-    //   error => {
-    //     this.error = error;
-    //   });
+
   }
 }
