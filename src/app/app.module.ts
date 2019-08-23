@@ -9,14 +9,16 @@ import {environment} from '../environments/environment.prod';
 import {AppComponent} from './app.component';
 import {consoleLogServiceInstance, logServiceToken} from './logServiceToken';
 
-import {ScheduleModule} from './schedule/schedule.module';
-import {ScheduleComponent} from './schedule/schedule.component';
 
 const routes: Routes = [
-  {path: 'Route/:routeNumber', component: ScheduleComponent},
+  {
+    path: 'Route',
+    loadChildren: () => import('./schedule/schedule.module').then(mod => mod.ScheduleModule)
+  },
   {path: '', redirectTo: 'Route/17A', pathMatch: 'full'},
   // {path: '**', component: PageNotFoundComponent}
 ];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +31,7 @@ const routes: Routes = [
     RouterModule.forRoot(
       routes,
       {enableTracing: !environment.production} // <-- debugging purposes only
-    ),
-    ScheduleModule
+    )
   ],
   providers: [{
     provide: LocationStrategy, useClass: HashLocationStrategy

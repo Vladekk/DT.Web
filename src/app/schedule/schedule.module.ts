@@ -7,7 +7,7 @@ import {NgbDropdownModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {ScheduleService} from '../../services/schedule.service';
 
 const routes: Routes = [
-  {path: 'Route/:routeNumber', component: ScheduleComponent}
+  {path: ':routeNumber', component: ScheduleComponent}
   // {path: '**', component: PageNotFoundComponent}
 ];
 
