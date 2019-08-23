@@ -8,7 +8,7 @@ import {ISimpleLogService} from '../../../DT-Backend/src/services/SimpleLogServi
 import {logServiceToken} from '../app/logServiceToken';
 import {Route} from '../app/Route';
 import {IGetScheduleInfo} from '../IGetScheduleInfo';
-import ConfigService from './config.service';
+import {ConfigService} from './config.service';
 
 export class ScheduleService implements IGetScheduleInfo {
 
