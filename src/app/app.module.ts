@@ -21,9 +21,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent,
-    // ScheduleComponent,
-
+    AppComponent
   ],
   imports: [
     BrowserModule,

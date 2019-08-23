@@ -57,7 +57,7 @@ export class ScheduleComponent implements OnInit, OnDestroy {
 
   @bind
   IsClosestToNow(row: Date, schedule: Date[]) {
-    let afterNowRuns = schedule.filter(val => val > this.now);
+    let afterNowRuns = schedule.filter(val => val >= this.now);
     return afterNowRuns.length > 0 && afterNowRuns[0] == row;
   }
 
