@@ -1,5 +1,5 @@
 import {HttpClient} from '@angular/common/http';
-import {Inject} from '@angular/core';
+import {forwardRef, Inject} from '@angular/core';
 import bind from 'bind-decorator';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
@@ -15,7 +15,7 @@ export class ScheduleService implements IGetScheduleInfo {
   private readonly routeDataSupplier: Observable<Route[]>;
   private takeHowMuch = 4;
 
-  constructor(private http: HttpClient, private configService: ConfigService,
+  constructor(private http: HttpClient, @Inject(forwardRef(() => ConfigService))  private configService: ConfigService,
               @Inject(logServiceToken) private logService: ISimpleLogService) {
 
     this.routeDataSupplier = this.http.post<Route[]>(configService.ScheduleServiceUrl + 'GetAllRoutes', {}, {
