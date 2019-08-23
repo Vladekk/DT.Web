@@ -4,7 +4,7 @@ import {ISimpleLogService} from '../../../../DT-Backend/src/services/SimpleLogSe
 import {ActivatedRoute, ParamMap} from '@angular/router';
 import {NgxSpinnerService} from 'ngx-spinner';
 import {logServiceToken} from '../logServiceToken';
-import {interval, Observable, Subscription} from 'rxjs';
+import {forkJoin, interval, Observable, Subscription} from 'rxjs';
 import {first, map} from 'rxjs/operators';
 import bind from 'bind-decorator';
 import {IRunVm} from './IRunVm';
@@ -22,8 +22,6 @@ export class ScheduleComponent implements OnInit, OnDestroy {
   public toCenterSchedule$: Observable<IRunVm[]>;
   private subscription: Subscription = new Subscription();
 
-  public fromCenterSchedule: Date[];
-  public toCenterSchedule: Date[];
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
@@ -47,7 +45,7 @@ export class ScheduleComponent implements OnInit, OnDestroy {
     this.subscription.add(intervalSub);
 
     this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
-      //this.spinner.show();
+      this.spinner.show();
       const routeNumber = params.get('routeNumber') as string;
       this.logService.Log(`Route selected is ${routeNumber}, getting schedule`);
       this.GetSchedule(routeNumber);
@@ -93,6 +91,12 @@ export class ScheduleComponent implements OnInit, OnDestroy {
         .pipe(first(),
           map(([, tc]) => tc),
           map(this.MapToVm));
+
+    forkJoin(this.fromCenterSchedule$, this.toCenterSchedule$).subscribe({
+      'complete': () => this.spinner.hide(),
+      'error': () => this.spinner.hide()
+    });
+
 
   }
 }
