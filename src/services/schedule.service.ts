@@ -26,7 +26,7 @@ export class ScheduleService implements IGetScheduleInfo {
   @bind
   private getProperDate(str): Date {
     const date = new Date(Date.parse(str));
-    return date;
+    return  date;
 
   };
 
