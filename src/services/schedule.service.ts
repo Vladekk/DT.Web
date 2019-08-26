@@ -3,7 +3,6 @@ import {forwardRef, Inject} from '@angular/core';
 import bind from 'bind-decorator';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
-import {ConversionDirection, DtUtils} from '../../../DT-Backend/src/services/DtUtils/dtUtils';
 import {ISimpleLogService} from '../../../DT-Backend/src/services/SimpleLogService/ISimpleLogService';
 import {logServiceToken} from '../app/logServiceToken';
 import {Route} from '../app/Route';
@@ -15,7 +14,7 @@ export class ScheduleService implements IGetScheduleInfo {
   private readonly routeDataSupplier: Observable<Route[]>;
   private takeHowMuch = 4;
 
-  constructor(private http: HttpClient, @Inject(forwardRef(() => ConfigService))  private configService: ConfigService,
+  constructor(private http: HttpClient, @Inject(forwardRef(() => ConfigService)) private configService: ConfigService,
               @Inject(logServiceToken) private logService: ISimpleLogService) {
 
     this.routeDataSupplier = this.http.post<Route[]>(configService.ScheduleServiceUrl + 'GetAllRoutes', {}, {
@@ -25,13 +24,14 @@ export class ScheduleService implements IGetScheduleInfo {
   }
 
   @bind
-  private getProperDate (str): Date {
+  private getProperDate(str): Date {
     const date = new Date(Date.parse(str));
-    return DtUtils.DateToUtcAndBack(date, ConversionDirection.FromUtc);
+    return date;
 
   };
+
   @bind
-  private fixDates ([fromCenter, toCenter]: [string[], string[]]) {
+  private fixDates([fromCenter, toCenter]: [string[], string[]]) {
     // this is hack to parse dates in json
     const result: [Date[], Date[]] =
       [fromCenter.map(this.getProperDate).slice(0, this.takeHowMuch),
