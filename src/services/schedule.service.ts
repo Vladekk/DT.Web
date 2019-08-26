@@ -8,6 +8,7 @@ import {logServiceToken} from '../app/logServiceToken';
 import {Route} from '../app/Route';
 import {IGetScheduleInfo} from '../IGetScheduleInfo';
 import {ConfigService} from './config.service';
+import {DtUtils} from '../../../DT-Backend/src/services/DtUtils/dtUtils';
 
 export class ScheduleService implements IGetScheduleInfo {
 
@@ -26,7 +27,7 @@ export class ScheduleService implements IGetScheduleInfo {
   @bind
   private getProperDate(str): Date {
     const date = new Date(Date.parse(str));
-    return  date;
+    return new Date(date.getTime() - DtUtils.GetRigaTzOffsetInMs());
 
   };
 
